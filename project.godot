@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "CenterContainer",
+"class": "ColorCard",
+"language": "GDScript",
+"path": "res://scripts/color_card.gd"
+} ]
 _global_script_class_icons={
-
+"ColorCard": ""
 }
 
 [application]
