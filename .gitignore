@@ -1,0 +1,28 @@
+.ignore/
+
+# Created by https://www.toptal.com/developers/gitignore/api/godot,code
+# Edit at https://www.toptal.com/developers/gitignore?templates=godot,code
+
+### Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### Godot ###
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+
+# End of https://www.toptal.com/developers/gitignore/api/godot,code
