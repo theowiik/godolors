@@ -2,8 +2,9 @@ extends Node2D
 
 onready var card_container: GridContainer = $CardContainer
 onready var color_card: PackedScene = preload("res://scenes/ColorCard.tscn")
+onready var color_file_reader: ColorFileReader = $ColorFileReader
 const COLUMNS: int = 4
-const CARD_WIDTH: int = 64
+const CARD_WIDTH: int = 128
 const CARD_HEIGHT: int = 128
 
 func _ready():
@@ -11,11 +12,11 @@ func _ready():
   add_cards(dic)
   set_columns(COLUMNS)
 
-func _process(delta):
+func _process(_delta):
   set_window_size() # should not be here :), but I am probably not gonna fix it
 
 func get_color_hex_dic() -> Dictionary:
-  return {"blue": "#0000ff", "red": "#ff0000"}
+  return color_file_reader.get_colors()
 
 func add_cards(colors: Dictionary) -> void:
   for key in colors.keys():

@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "ColorCard",
 "language": "GDScript",
 "path": "res://scripts/color_card.gd"
+}, {
+"base": "Node",
+"class": "ColorFileReader",
+"language": "GDScript",
+"path": "res://scripts/color_file_reader.gd"
 } ]
 _global_script_class_icons={
-"ColorCard": ""
+"ColorCard": "",
+"ColorFileReader": ""
 }
 
 [application]
