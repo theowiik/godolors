@@ -3,29 +3,44 @@ extends Node2D
 onready var card_container: GridContainer = $CardContainer
 onready var color_card: PackedScene = preload("res://scenes/ColorCard.tscn")
 onready var color_file_reader: ColorFileReader = $ColorFileReader
-const COLUMNS: int = 4
-const CARD_WIDTH: int = 128
-const CARD_HEIGHT: int = 128
+const COLUMNS: int = 6
+const CARD_WIDTH: int = 200
+const CARD_HEIGHT: int = 32
+var screenshot_taken: bool = false
 
 func _ready():
   var dic: Dictionary = get_color_hex_dic()
   add_cards(dic)
   set_columns(COLUMNS)
 
-func _process(_delta):
-  set_window_size() # should not be here :), but I am probably not gonna fix it
+func _process(_delta) -> void:
+  if !screenshot_taken:
+    set_window_size()
+    yield(get_tree(), "idle_frame")
+    screenshot()
+    screenshot_taken = true
+
+func screenshot() -> void:
+  var img: Image = get_viewport().get_texture().get_data()
+
+  var filePath: String = "user://colors.png";
+  img.flip_y();
+  img.save_png(filePath);
+
+  var path: String = ProjectSettings.globalize_path("user://");
+  OS.shell_open(path)
 
 func get_color_hex_dic() -> Dictionary:
   return color_file_reader.get_colors()
 
 func add_cards(colors: Dictionary) -> void:
   for key in colors.keys():
-    var hexCode: String = colors[key]
-    
+    var color: Color = colors[key]
+
     var card: ColorCard = color_card.instance()
     card_container.add_child(card)
     card.set_text(key)
-    card.set_color_hex(hexCode)
+    card.set_color(color)
     card.set_card_size(CARD_WIDTH, CARD_HEIGHT)
 
 func set_columns(n: int) -> void:

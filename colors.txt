@@ -1,5 +1,3 @@
-# these colors were snapshotted 08/08/2020
-
 aliceblue = Color( 0.94, 0.97, 1, 1 ) --- Alice blue color.
 antiquewhite = Color( 0.98, 0.92, 0.84, 1 ) --- Antique white color.
 aqua = Color( 0, 1, 1, 1 ) --- Aqua color.
