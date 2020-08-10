@@ -3,8 +3,8 @@ extends Node2D
 onready var card_container: GridContainer = $CardContainer
 onready var color_card: PackedScene = preload("res://scenes/ColorCard.tscn")
 onready var color_file_reader: ColorFileReader = $ColorFileReader
-const COLUMNS: int = 6
-const CARD_WIDTH: int = 160
+const COLUMNS: int = 5
+const CARD_WIDTH: int = 200
 const CARD_HEIGHT: int = 32
 var screenshot_taken: bool = false
 
