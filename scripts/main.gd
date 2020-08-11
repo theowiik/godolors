@@ -2,9 +2,9 @@ extends Node2D
 
 onready var card_container: GridContainer = $CardContainer
 onready var color_card: PackedScene = preload("res://scenes/ColorCard.tscn")
-const COLUMNS: int = 5
-const CARD_WIDTH: int = 200
-const CARD_HEIGHT: int = 32
+const COLUMNS: int = 7
+const CARD_WIDTH: int = 230
+const CARD_HEIGHT: int = 40
 var screenshot_taken: bool = false
 
 func _ready():
