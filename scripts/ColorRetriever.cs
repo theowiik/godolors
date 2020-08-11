@@ -1,3 +1,4 @@
+using System.Linq;
 using Godot;
 using Godot.Collections;
 
@@ -8,12 +9,18 @@ public sealed class ColorRetriever : Node
   public Array<Dictionary<string, Color>> GetSortedColors()
   {
     var colors = ParseFile();
-    Sort(colors);
-    return colors;
+    return Sorted(colors);
   }
 
-  private void Sort(Array<Dictionary<string, Color>> colors)
+  private Array<Dictionary<string, Color>> Sorted(Array<Dictionary<string, Color>> colors)
   {
+    var godotArr = new Array<Dictionary<string, Color>>();
+    var sorted   = colors.OrderBy(dic => dic[dic.Keys.First()].h);
+
+    foreach (var dic in sorted)
+      godotArr.Add(dic);
+
+    return godotArr;
   }
 
   private Array<Dictionary<string, Color>> ParseFile()
