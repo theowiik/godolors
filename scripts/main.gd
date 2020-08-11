@@ -2,15 +2,14 @@ extends Node2D
 
 onready var card_container: GridContainer = $CardContainer
 onready var color_card: PackedScene = preload("res://scenes/ColorCard.tscn")
-onready var color_file_reader: ColorFileReader = $ColorFileReader
 const COLUMNS: int = 5
 const CARD_WIDTH: int = 200
 const CARD_HEIGHT: int = 32
 var screenshot_taken: bool = false
 
 func _ready():
-  var dic: Dictionary = get_color_hex_dic()
-  add_cards(dic)
+  var colors = get_colors()
+  add_cards(colors)
   set_columns(COLUMNS)
 
 func _process(_delta) -> void:
@@ -30,16 +29,19 @@ func screenshot() -> void:
   var path: String = ProjectSettings.globalize_path("user://");
   OS.shell_open(path)
 
-func get_color_hex_dic() -> Dictionary:
-  return color_file_reader.get_colors()
+func get_colors() -> Dictionary:
+  var cs_class = preload("res://scripts/ColorRetriever.cs")
+  var cs_node = cs_class.new()
+  return cs_node.GetSortedColors()
 
-func add_cards(colors: Dictionary) -> void:
-  for key in colors.keys():
-    var color: Color = colors[key]
-
+func add_cards(colors: Array) -> void:
+  for colorDic in colors:
+    var colorName: String = colorDic.keys()[0]
+    var color: Color = colorDic[colorName]
+    
     var card: ColorCard = color_card.instance()
     card_container.add_child(card)
-    card.set_text(key)
+    card.set_text(colorName)
     card.set_color(color)
     card.set_card_size(CARD_WIDTH, CARD_HEIGHT)
 

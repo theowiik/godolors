@@ -13,15 +13,9 @@ _global_script_classes=[ {
 "class": "ColorCard",
 "language": "GDScript",
 "path": "res://scripts/color_card.gd"
-}, {
-"base": "Node",
-"class": "ColorFileReader",
-"language": "GDScript",
-"path": "res://scripts/color_file_reader.gd"
 } ]
 _global_script_class_icons={
-"ColorCard": "",
-"ColorFileReader": ""
+"ColorCard": ""
 }
 
 [application]
@@ -33,4 +27,3 @@ config/icon="res://icon.png"
 [rendering]
 
 environment/default_clear_color=Color( 0.341176, 0.341176, 0.341176, 1 )
-environment/default_environment="res://default_env.tres"
