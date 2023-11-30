@@ -1,53 +1,63 @@
 extends Node2D
 
-onready var card_container: GridContainer = $CardContainer
-onready var color_card: PackedScene = preload("res://scenes/ColorCard.tscn")
-const COLUMNS: int = 7
+# ====== CONFIG ======
+
+var filePath: String = "user://colors.png"
 const CARD_WIDTH: int = 230
 const CARD_HEIGHT: int = 40
+const COLUMNS: int = 7
+
+# ====================
+
+@onready var card_container: GridContainer = $CardContainer
+@onready var color_card: PackedScene = preload("res://scenes/color_card.tscn")
 var screenshot_taken: bool = false
 
-func _ready():
-  var colors = get_colors()
-  add_cards(colors)
-  set_columns(COLUMNS)
+
+class ColorPair:
+	var name: String
+	var color: Color
+
+	func _init(_name: String, _color: Color):
+		name = _name
+		color = _color
+
+
+func _ready() -> void:
+	add_cards(get_colors())
+	card_container.columns = COLUMNS
+
 
 func _process(_delta) -> void:
-  if !screenshot_taken:
-    set_window_size()
-    yield(get_tree(), "idle_frame")
-    screenshot()
-    screenshot_taken = true
+	if screenshot_taken:
+		return
+
+	get_window().size = card_container.size
+	await get_tree().physics_frame
+	screenshot()
+	screenshot_taken = true
+
 
 func screenshot() -> void:
-  var img: Image = get_viewport().get_texture().get_data()
+	var img: Image = get_viewport().get_texture().get_image()
+	img.save_png(filePath)
+	var path: String = ProjectSettings.globalize_path("user://")
+	OS.shell_open(path)
 
-  var filePath: String = "user://colors.png";
-  img.flip_y();
-  img.save_png(filePath);
 
-  var path: String = ProjectSettings.globalize_path("user://");
-  OS.shell_open(path)
+func add_cards(colors: Array[ColorPair]) -> void:
+	for colorPair in colors:
+		var card: ColorCard = color_card.instantiate()
+		card_container.add_child(card)
+		card.set_text(colorPair.name)
+		card.set_color(colorPair.color)
+		card.set_card_size(CARD_WIDTH, CARD_HEIGHT)
 
-func get_colors() -> Dictionary:
-  var cs_class = preload("res://scripts/ColorRetriever.cs")
-  var cs_node = cs_class.new()
-  return cs_node.GetSortedColors()
 
-func add_cards(colors: Array) -> void:
-  for colorDic in colors:
-    var colorName: String = colorDic.keys()[0]
-    var color: Color = colorDic[colorName]
-    
-    var card: ColorCard = color_card.instance()
-    card_container.add_child(card)
-    card.set_text(colorName)
-    card.set_color(color)
-    card.set_card_size(CARD_WIDTH, CARD_HEIGHT)
+func get_colors() -> Array[ColorPair]:
+	var output: Array[ColorPair] = []
 
-func set_columns(n: int) -> void:
-  if n <= 0: return
-  card_container.columns = n
+	output.append(ColorPair.new("AliceBlue", Color(0.941176, 0.972549, 1.000000)))
+	output.append(ColorPair.new("AntiqueWhite", Color(0.980392, 0.921569, 0.843137)))
 
-func set_window_size() -> void:
-  OS.window_size = card_container.rect_size
+	return output
