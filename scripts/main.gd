@@ -5,8 +5,8 @@ extends Node2D
 const SAVE_TO: String = "user://colors.png"
 const READ_FROM: String = "res://_INPUT_COLORS_HERE.txt"
 
-const CARD_WIDTH: int = 230
-const CARD_HEIGHT: int = 40
+const CARD_WIDTH: int = 430
+const CARD_HEIGHT: int = 70
 const COLUMNS: int = 7
 
 # ====================
