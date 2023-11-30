@@ -73,9 +73,7 @@ func parse_colors() -> Array[ColorPair]:
 			continue
 
 		var color_name: String = substr_between(line, "**", "**")
-		var color_values = substr_between(line, "(", ")").split(",")
-
-		print(color_name, color_values)
+		var color_values: PackedStringArray = substr_between(line, "(", ")").split(",")
 
 		var color: Color = Color(
 			color_values[0].to_float(),
