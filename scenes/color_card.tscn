@@ -8,17 +8,19 @@ offset_bottom = 14.0
 script = ExtResource("1_56vnd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(300, 300)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color(0.0666667, 0.258824, 0.317647, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-custom_minimum_size = Vector2(100, 100)
+clip_contents = false
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/bold_font_size = 31
 bbcode_enabled = true
-text = "[b]lorem ipsum[/b]"
+text = "[center][b]lorem ipsum[/b][/center]"
 fit_content = true
+autowrap_mode = 0
