@@ -6,24 +6,19 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "CenterContainer",
-"class": "ColorCard",
-"language": "GDScript",
-"path": "res://scripts/color_card.gd"
-} ]
-_global_script_class_icons={
-"ColorCard": ""
-}
+config_version=5
 
 [application]
 
 config/name="godolors"
-run/main_scene="res://scenes/Main.tscn"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
+
+[dotnet]
+
+project/assembly_name="godolors"
 
 [rendering]
 
-environment/default_clear_color=Color( 0.341176, 0.341176, 0.341176, 1 )
+environment/defaults/default_clear_color=Color(0.341176, 0.341176, 0.341176, 1)

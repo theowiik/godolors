@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctwya4mgk8p2b"]
+
+[ext_resource type="Script" path="res://scripts/color_card.gd" id="1_56vnd"]
+
+[node name="ColorCard" type="CenterContainer"]
+offset_right = 42.0
+offset_bottom = 14.0
+script = ExtResource("1_56vnd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.0666667, 0.258824, 0.317647, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+clip_contents = false
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/bold_font_size = 31
+bbcode_enabled = true
+text = "[center][b]lorem ipsum[/b][/center]"
+fit_content = true
+autowrap_mode = 0

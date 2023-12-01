@@ -1,53 +1,56 @@
 extends Node2D
 
-onready var card_container: GridContainer = $CardContainer
-onready var color_card: PackedScene = preload("res://scenes/ColorCard.tscn")
+# ====== CONFIG ======
+
+const SAVE_TO: String = "user://colors.png"
+const CARD_WIDTH: int = 430
+const CARD_HEIGHT: int = 90
 const COLUMNS: int = 7
-const CARD_WIDTH: int = 230
-const CARD_HEIGHT: int = 40
+
+# ====================
+
+const ColorParser = preload("res://scripts/color_parser.gd")
+@onready var card_container: GridContainer = $CardContainer
+@onready var color_card: PackedScene = preload("res://scenes/color_card.tscn")
 var screenshot_taken: bool = false
 
-func _ready():
-  var colors = get_colors()
-  add_cards(colors)
-  set_columns(COLUMNS)
+
+func _ready() -> void:
+	card_container.columns = COLUMNS
+	var color_parser: ColorParser = ColorParser.new()
+	var colors: Array[ColorParser.ColorPair] = color_parser.parse_colors()
+
+	# Add placeholder cards to fill the last row
+	var rows: int = ceil(float(colors.size()) / COLUMNS)
+	var n_missing: int = (rows * COLUMNS) - colors.size()
+	for i in range(n_missing):
+		colors.append(ColorParser.ColorPair.new("", Color(1, 1, 1)))
+
+	add_cards(colors)
+
 
 func _process(_delta) -> void:
-  if !screenshot_taken:
-    set_window_size()
-    yield(get_tree(), "idle_frame")
-    screenshot()
-    screenshot_taken = true
+	if screenshot_taken:
+		return
+
+	get_window().size = card_container.size
+	await get_tree().physics_frame
+	screenshot()
+	screenshot_taken = true
+	get_tree().quit()
+
 
 func screenshot() -> void:
-  var img: Image = get_viewport().get_texture().get_data()
+	var img: Image = get_viewport().get_texture().get_image()
+	img.save_png(SAVE_TO)
+	var path: String = ProjectSettings.globalize_path("user://")
+	OS.shell_open(path)
 
-  var filePath: String = "user://colors.png";
-  img.flip_y();
-  img.save_png(filePath);
 
-  var path: String = ProjectSettings.globalize_path("user://");
-  OS.shell_open(path)
-
-func get_colors() -> Dictionary:
-  var cs_class = preload("res://scripts/ColorRetriever.cs")
-  var cs_node = cs_class.new()
-  return cs_node.GetSortedColors()
-
-func add_cards(colors: Array) -> void:
-  for colorDic in colors:
-    var colorName: String = colorDic.keys()[0]
-    var color: Color = colorDic[colorName]
-    
-    var card: ColorCard = color_card.instance()
-    card_container.add_child(card)
-    card.set_text(colorName)
-    card.set_color(color)
-    card.set_card_size(CARD_WIDTH, CARD_HEIGHT)
-
-func set_columns(n: int) -> void:
-  if n <= 0: return
-  card_container.columns = n
-
-func set_window_size() -> void:
-  OS.window_size = card_container.rect_size
+func add_cards(colors: Array[ColorParser.ColorPair]) -> void:
+	for colorPair in colors:
+		var card: ColorCard = color_card.instantiate()
+		card_container.add_child(card)
+		card.set_text(colorPair.name)
+		card.set_color(colorPair.color)
+		card.set_card_size(CARD_WIDTH, CARD_HEIGHT)

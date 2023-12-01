@@ -1,0 +1,1163 @@
+**ALICE_BLUE** = ``Color(0.941176, 0.972549, 1, 1)``
+
+Alice blue color.
+
+.. _class_Color_constant_ANTIQUE_WHITE:
+
+.. rst-class:: classref-constant
+
+**ANTIQUE_WHITE** = ``Color(0.980392, 0.921569, 0.843137, 1)``
+
+Antique white color.
+
+.. _class_Color_constant_AQUA:
+
+.. rst-class:: classref-constant
+
+**AQUA** = ``Color(0, 1, 1, 1)``
+
+Aqua color.
+
+.. _class_Color_constant_AQUAMARINE:
+
+.. rst-class:: classref-constant
+
+**AQUAMARINE** = ``Color(0.498039, 1, 0.831373, 1)``
+
+Aquamarine color.
+
+.. _class_Color_constant_AZURE:
+
+.. rst-class:: classref-constant
+
+**AZURE** = ``Color(0.941176, 1, 1, 1)``
+
+Azure color.
+
+.. _class_Color_constant_BEIGE:
+
+.. rst-class:: classref-constant
+
+**BEIGE** = ``Color(0.960784, 0.960784, 0.862745, 1)``
+
+Beige color.
+
+.. _class_Color_constant_BISQUE:
+
+.. rst-class:: classref-constant
+
+**BISQUE** = ``Color(1, 0.894118, 0.768627, 1)``
+
+Bisque color.
+
+.. _class_Color_constant_BLACK:
+
+.. rst-class:: classref-constant
+
+**BLACK** = ``Color(0, 0, 0, 1)``
+
+Black color. In GDScript, this is the default value of any color.
+
+.. _class_Color_constant_BLANCHED_ALMOND:
+
+.. rst-class:: classref-constant
+
+**BLANCHED_ALMOND** = ``Color(1, 0.921569, 0.803922, 1)``
+
+Blanched almond color.
+
+.. _class_Color_constant_BLUE:
+
+.. rst-class:: classref-constant
+
+**BLUE** = ``Color(0, 0, 1, 1)``
+
+Blue color.
+
+.. _class_Color_constant_BLUE_VIOLET:
+
+.. rst-class:: classref-constant
+
+**BLUE_VIOLET** = ``Color(0.541176, 0.168627, 0.886275, 1)``
+
+Blue violet color.
+
+.. _class_Color_constant_BROWN:
+
+.. rst-class:: classref-constant
+
+**BROWN** = ``Color(0.647059, 0.164706, 0.164706, 1)``
+
+Brown color.
+
+.. _class_Color_constant_BURLYWOOD:
+
+.. rst-class:: classref-constant
+
+**BURLYWOOD** = ``Color(0.870588, 0.721569, 0.529412, 1)``
+
+Burlywood color.
+
+.. _class_Color_constant_CADET_BLUE:
+
+.. rst-class:: classref-constant
+
+**CADET_BLUE** = ``Color(0.372549, 0.619608, 0.627451, 1)``
+
+Cadet blue color.
+
+.. _class_Color_constant_CHARTREUSE:
+
+.. rst-class:: classref-constant
+
+**CHARTREUSE** = ``Color(0.498039, 1, 0, 1)``
+
+Chartreuse color.
+
+.. _class_Color_constant_CHOCOLATE:
+
+.. rst-class:: classref-constant
+
+**CHOCOLATE** = ``Color(0.823529, 0.411765, 0.117647, 1)``
+
+Chocolate color.
+
+.. _class_Color_constant_CORAL:
+
+.. rst-class:: classref-constant
+
+**CORAL** = ``Color(1, 0.498039, 0.313726, 1)``
+
+Coral color.
+
+.. _class_Color_constant_CORNFLOWER_BLUE:
+
+.. rst-class:: classref-constant
+
+**CORNFLOWER_BLUE** = ``Color(0.392157, 0.584314, 0.929412, 1)``
+
+Cornflower blue color.
+
+.. _class_Color_constant_CORNSILK:
+
+.. rst-class:: classref-constant
+
+**CORNSILK** = ``Color(1, 0.972549, 0.862745, 1)``
+
+Cornsilk color.
+
+.. _class_Color_constant_CRIMSON:
+
+.. rst-class:: classref-constant
+
+**CRIMSON** = ``Color(0.862745, 0.0784314, 0.235294, 1)``
+
+Crimson color.
+
+.. _class_Color_constant_CYAN:
+
+.. rst-class:: classref-constant
+
+**CYAN** = ``Color(0, 1, 1, 1)``
+
+Cyan color.
+
+.. _class_Color_constant_DARK_BLUE:
+
+.. rst-class:: classref-constant
+
+**DARK_BLUE** = ``Color(0, 0, 0.545098, 1)``
+
+Dark blue color.
+
+.. _class_Color_constant_DARK_CYAN:
+
+.. rst-class:: classref-constant
+
+**DARK_CYAN** = ``Color(0, 0.545098, 0.545098, 1)``
+
+Dark cyan color.
+
+.. _class_Color_constant_DARK_GOLDENROD:
+
+.. rst-class:: classref-constant
+
+**DARK_GOLDENROD** = ``Color(0.721569, 0.52549, 0.0431373, 1)``
+
+Dark goldenrod color.
+
+.. _class_Color_constant_DARK_GRAY:
+
+.. rst-class:: classref-constant
+
+**DARK_GRAY** = ``Color(0.662745, 0.662745, 0.662745, 1)``
+
+Dark gray color.
+
+.. _class_Color_constant_DARK_GREEN:
+
+.. rst-class:: classref-constant
+
+**DARK_GREEN** = ``Color(0, 0.392157, 0, 1)``
+
+Dark green color.
+
+.. _class_Color_constant_DARK_KHAKI:
+
+.. rst-class:: classref-constant
+
+**DARK_KHAKI** = ``Color(0.741176, 0.717647, 0.419608, 1)``
+
+Dark khaki color.
+
+.. _class_Color_constant_DARK_MAGENTA:
+
+.. rst-class:: classref-constant
+
+**DARK_MAGENTA** = ``Color(0.545098, 0, 0.545098, 1)``
+
+Dark magenta color.
+
+.. _class_Color_constant_DARK_OLIVE_GREEN:
+
+.. rst-class:: classref-constant
+
+**DARK_OLIVE_GREEN** = ``Color(0.333333, 0.419608, 0.184314, 1)``
+
+Dark olive green color.
+
+.. _class_Color_constant_DARK_ORANGE:
+
+.. rst-class:: classref-constant
+
+**DARK_ORANGE** = ``Color(1, 0.54902, 0, 1)``
+
+Dark orange color.
+
+.. _class_Color_constant_DARK_ORCHID:
+
+.. rst-class:: classref-constant
+
+**DARK_ORCHID** = ``Color(0.6, 0.196078, 0.8, 1)``
+
+Dark orchid color.
+
+.. _class_Color_constant_DARK_RED:
+
+.. rst-class:: classref-constant
+
+**DARK_RED** = ``Color(0.545098, 0, 0, 1)``
+
+Dark red color.
+
+.. _class_Color_constant_DARK_SALMON:
+
+.. rst-class:: classref-constant
+
+**DARK_SALMON** = ``Color(0.913725, 0.588235, 0.478431, 1)``
+
+Dark salmon color.
+
+.. _class_Color_constant_DARK_SEA_GREEN:
+
+.. rst-class:: classref-constant
+
+**DARK_SEA_GREEN** = ``Color(0.560784, 0.737255, 0.560784, 1)``
+
+Dark sea green color.
+
+.. _class_Color_constant_DARK_SLATE_BLUE:
+
+.. rst-class:: classref-constant
+
+**DARK_SLATE_BLUE** = ``Color(0.282353, 0.239216, 0.545098, 1)``
+
+Dark slate blue color.
+
+.. _class_Color_constant_DARK_SLATE_GRAY:
+
+.. rst-class:: classref-constant
+
+**DARK_SLATE_GRAY** = ``Color(0.184314, 0.309804, 0.309804, 1)``
+
+Dark slate gray color.
+
+.. _class_Color_constant_DARK_TURQUOISE:
+
+.. rst-class:: classref-constant
+
+**DARK_TURQUOISE** = ``Color(0, 0.807843, 0.819608, 1)``
+
+Dark turquoise color.
+
+.. _class_Color_constant_DARK_VIOLET:
+
+.. rst-class:: classref-constant
+
+**DARK_VIOLET** = ``Color(0.580392, 0, 0.827451, 1)``
+
+Dark violet color.
+
+.. _class_Color_constant_DEEP_PINK:
+
+.. rst-class:: classref-constant
+
+**DEEP_PINK** = ``Color(1, 0.0784314, 0.576471, 1)``
+
+Deep pink color.
+
+.. _class_Color_constant_DEEP_SKY_BLUE:
+
+.. rst-class:: classref-constant
+
+**DEEP_SKY_BLUE** = ``Color(0, 0.74902, 1, 1)``
+
+Deep sky blue color.
+
+.. _class_Color_constant_DIM_GRAY:
+
+.. rst-class:: classref-constant
+
+**DIM_GRAY** = ``Color(0.411765, 0.411765, 0.411765, 1)``
+
+Dim gray color.
+
+.. _class_Color_constant_DODGER_BLUE:
+
+.. rst-class:: classref-constant
+
+**DODGER_BLUE** = ``Color(0.117647, 0.564706, 1, 1)``
+
+Dodger blue color.
+
+.. _class_Color_constant_FIREBRICK:
+
+.. rst-class:: classref-constant
+
+**FIREBRICK** = ``Color(0.698039, 0.133333, 0.133333, 1)``
+
+Firebrick color.
+
+.. _class_Color_constant_FLORAL_WHITE:
+
+.. rst-class:: classref-constant
+
+**FLORAL_WHITE** = ``Color(1, 0.980392, 0.941176, 1)``
+
+Floral white color.
+
+.. _class_Color_constant_FOREST_GREEN:
+
+.. rst-class:: classref-constant
+
+**FOREST_GREEN** = ``Color(0.133333, 0.545098, 0.133333, 1)``
+
+Forest green color.
+
+.. _class_Color_constant_FUCHSIA:
+
+.. rst-class:: classref-constant
+
+**FUCHSIA** = ``Color(1, 0, 1, 1)``
+
+Fuchsia color.
+
+.. _class_Color_constant_GAINSBORO:
+
+.. rst-class:: classref-constant
+
+**GAINSBORO** = ``Color(0.862745, 0.862745, 0.862745, 1)``
+
+Gainsboro color.
+
+.. _class_Color_constant_GHOST_WHITE:
+
+.. rst-class:: classref-constant
+
+**GHOST_WHITE** = ``Color(0.972549, 0.972549, 1, 1)``
+
+Ghost white color.
+
+.. _class_Color_constant_GOLD:
+
+.. rst-class:: classref-constant
+
+**GOLD** = ``Color(1, 0.843137, 0, 1)``
+
+Gold color.
+
+.. _class_Color_constant_GOLDENROD:
+
+.. rst-class:: classref-constant
+
+**GOLDENROD** = ``Color(0.854902, 0.647059, 0.12549, 1)``
+
+Goldenrod color.
+
+.. _class_Color_constant_GRAY:
+
+.. rst-class:: classref-constant
+
+**GRAY** = ``Color(0.745098, 0.745098, 0.745098, 1)``
+
+Gray color.
+
+.. _class_Color_constant_GREEN:
+
+.. rst-class:: classref-constant
+
+**GREEN** = ``Color(0, 1, 0, 1)``
+
+Green color.
+
+.. _class_Color_constant_GREEN_YELLOW:
+
+.. rst-class:: classref-constant
+
+**GREEN_YELLOW** = ``Color(0.678431, 1, 0.184314, 1)``
+
+Green yellow color.
+
+.. _class_Color_constant_HONEYDEW:
+
+.. rst-class:: classref-constant
+
+**HONEYDEW** = ``Color(0.941176, 1, 0.941176, 1)``
+
+Honeydew color.
+
+.. _class_Color_constant_HOT_PINK:
+
+.. rst-class:: classref-constant
+
+**HOT_PINK** = ``Color(1, 0.411765, 0.705882, 1)``
+
+Hot pink color.
+
+.. _class_Color_constant_INDIAN_RED:
+
+.. rst-class:: classref-constant
+
+**INDIAN_RED** = ``Color(0.803922, 0.360784, 0.360784, 1)``
+
+Indian red color.
+
+.. _class_Color_constant_INDIGO:
+
+.. rst-class:: classref-constant
+
+**INDIGO** = ``Color(0.294118, 0, 0.509804, 1)``
+
+Indigo color.
+
+.. _class_Color_constant_IVORY:
+
+.. rst-class:: classref-constant
+
+**IVORY** = ``Color(1, 1, 0.941176, 1)``
+
+Ivory color.
+
+.. _class_Color_constant_KHAKI:
+
+.. rst-class:: classref-constant
+
+**KHAKI** = ``Color(0.941176, 0.901961, 0.54902, 1)``
+
+Khaki color.
+
+.. _class_Color_constant_LAVENDER:
+
+.. rst-class:: classref-constant
+
+**LAVENDER** = ``Color(0.901961, 0.901961, 0.980392, 1)``
+
+Lavender color.
+
+.. _class_Color_constant_LAVENDER_BLUSH:
+
+.. rst-class:: classref-constant
+
+**LAVENDER_BLUSH** = ``Color(1, 0.941176, 0.960784, 1)``
+
+Lavender blush color.
+
+.. _class_Color_constant_LAWN_GREEN:
+
+.. rst-class:: classref-constant
+
+**LAWN_GREEN** = ``Color(0.486275, 0.988235, 0, 1)``
+
+Lawn green color.
+
+.. _class_Color_constant_LEMON_CHIFFON:
+
+.. rst-class:: classref-constant
+
+**LEMON_CHIFFON** = ``Color(1, 0.980392, 0.803922, 1)``
+
+Lemon chiffon color.
+
+.. _class_Color_constant_LIGHT_BLUE:
+
+.. rst-class:: classref-constant
+
+**LIGHT_BLUE** = ``Color(0.678431, 0.847059, 0.901961, 1)``
+
+Light blue color.
+
+.. _class_Color_constant_LIGHT_CORAL:
+
+.. rst-class:: classref-constant
+
+**LIGHT_CORAL** = ``Color(0.941176, 0.501961, 0.501961, 1)``
+
+Light coral color.
+
+.. _class_Color_constant_LIGHT_CYAN:
+
+.. rst-class:: classref-constant
+
+**LIGHT_CYAN** = ``Color(0.878431, 1, 1, 1)``
+
+Light cyan color.
+
+.. _class_Color_constant_LIGHT_GOLDENROD:
+
+.. rst-class:: classref-constant
+
+**LIGHT_GOLDENROD** = ``Color(0.980392, 0.980392, 0.823529, 1)``
+
+Light goldenrod color.
+
+.. _class_Color_constant_LIGHT_GRAY:
+
+.. rst-class:: classref-constant
+
+**LIGHT_GRAY** = ``Color(0.827451, 0.827451, 0.827451, 1)``
+
+Light gray color.
+
+.. _class_Color_constant_LIGHT_GREEN:
+
+.. rst-class:: classref-constant
+
+**LIGHT_GREEN** = ``Color(0.564706, 0.933333, 0.564706, 1)``
+
+Light green color.
+
+.. _class_Color_constant_LIGHT_PINK:
+
+.. rst-class:: classref-constant
+
+**LIGHT_PINK** = ``Color(1, 0.713726, 0.756863, 1)``
+
+Light pink color.
+
+.. _class_Color_constant_LIGHT_SALMON:
+
+.. rst-class:: classref-constant
+
+**LIGHT_SALMON** = ``Color(1, 0.627451, 0.478431, 1)``
+
+Light salmon color.
+
+.. _class_Color_constant_LIGHT_SEA_GREEN:
+
+.. rst-class:: classref-constant
+
+**LIGHT_SEA_GREEN** = ``Color(0.12549, 0.698039, 0.666667, 1)``
+
+Light sea green color.
+
+.. _class_Color_constant_LIGHT_SKY_BLUE:
+
+.. rst-class:: classref-constant
+
+**LIGHT_SKY_BLUE** = ``Color(0.529412, 0.807843, 0.980392, 1)``
+
+Light sky blue color.
+
+.. _class_Color_constant_LIGHT_SLATE_GRAY:
+
+.. rst-class:: classref-constant
+
+**LIGHT_SLATE_GRAY** = ``Color(0.466667, 0.533333, 0.6, 1)``
+
+Light slate gray color.
+
+.. _class_Color_constant_LIGHT_STEEL_BLUE:
+
+.. rst-class:: classref-constant
+
+**LIGHT_STEEL_BLUE** = ``Color(0.690196, 0.768627, 0.870588, 1)``
+
+Light steel blue color.
+
+.. _class_Color_constant_LIGHT_YELLOW:
+
+.. rst-class:: classref-constant
+
+**LIGHT_YELLOW** = ``Color(1, 1, 0.878431, 1)``
+
+Light yellow color.
+
+.. _class_Color_constant_LIME:
+
+.. rst-class:: classref-constant
+
+**LIME** = ``Color(0, 1, 0, 1)``
+
+Lime color.
+
+.. _class_Color_constant_LIME_GREEN:
+
+.. rst-class:: classref-constant
+
+**LIME_GREEN** = ``Color(0.196078, 0.803922, 0.196078, 1)``
+
+Lime green color.
+
+.. _class_Color_constant_LINEN:
+
+.. rst-class:: classref-constant
+
+**LINEN** = ``Color(0.980392, 0.941176, 0.901961, 1)``
+
+Linen color.
+
+.. _class_Color_constant_MAGENTA:
+
+.. rst-class:: classref-constant
+
+**MAGENTA** = ``Color(1, 0, 1, 1)``
+
+Magenta color.
+
+.. _class_Color_constant_MAROON:
+
+.. rst-class:: classref-constant
+
+**MAROON** = ``Color(0.690196, 0.188235, 0.376471, 1)``
+
+Maroon color.
+
+.. _class_Color_constant_MEDIUM_AQUAMARINE:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_AQUAMARINE** = ``Color(0.4, 0.803922, 0.666667, 1)``
+
+Medium aquamarine color.
+
+.. _class_Color_constant_MEDIUM_BLUE:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_BLUE** = ``Color(0, 0, 0.803922, 1)``
+
+Medium blue color.
+
+.. _class_Color_constant_MEDIUM_ORCHID:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_ORCHID** = ``Color(0.729412, 0.333333, 0.827451, 1)``
+
+Medium orchid color.
+
+.. _class_Color_constant_MEDIUM_PURPLE:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_PURPLE** = ``Color(0.576471, 0.439216, 0.858824, 1)``
+
+Medium purple color.
+
+.. _class_Color_constant_MEDIUM_SEA_GREEN:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_SEA_GREEN** = ``Color(0.235294, 0.701961, 0.443137, 1)``
+
+Medium sea green color.
+
+.. _class_Color_constant_MEDIUM_SLATE_BLUE:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_SLATE_BLUE** = ``Color(0.482353, 0.407843, 0.933333, 1)``
+
+Medium slate blue color.
+
+.. _class_Color_constant_MEDIUM_SPRING_GREEN:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_SPRING_GREEN** = ``Color(0, 0.980392, 0.603922, 1)``
+
+Medium spring green color.
+
+.. _class_Color_constant_MEDIUM_TURQUOISE:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_TURQUOISE** = ``Color(0.282353, 0.819608, 0.8, 1)``
+
+Medium turquoise color.
+
+.. _class_Color_constant_MEDIUM_VIOLET_RED:
+
+.. rst-class:: classref-constant
+
+**MEDIUM_VIOLET_RED** = ``Color(0.780392, 0.0823529, 0.521569, 1)``
+
+Medium violet red color.
+
+.. _class_Color_constant_MIDNIGHT_BLUE:
+
+.. rst-class:: classref-constant
+
+**MIDNIGHT_BLUE** = ``Color(0.0980392, 0.0980392, 0.439216, 1)``
+
+Midnight blue color.
+
+.. _class_Color_constant_MINT_CREAM:
+
+.. rst-class:: classref-constant
+
+**MINT_CREAM** = ``Color(0.960784, 1, 0.980392, 1)``
+
+Mint cream color.
+
+.. _class_Color_constant_MISTY_ROSE:
+
+.. rst-class:: classref-constant
+
+**MISTY_ROSE** = ``Color(1, 0.894118, 0.882353, 1)``
+
+Misty rose color.
+
+.. _class_Color_constant_MOCCASIN:
+
+.. rst-class:: classref-constant
+
+**MOCCASIN** = ``Color(1, 0.894118, 0.709804, 1)``
+
+Moccasin color.
+
+.. _class_Color_constant_NAVAJO_WHITE:
+
+.. rst-class:: classref-constant
+
+**NAVAJO_WHITE** = ``Color(1, 0.870588, 0.678431, 1)``
+
+Navajo white color.
+
+.. _class_Color_constant_NAVY_BLUE:
+
+.. rst-class:: classref-constant
+
+**NAVY_BLUE** = ``Color(0, 0, 0.501961, 1)``
+
+Navy blue color.
+
+.. _class_Color_constant_OLD_LACE:
+
+.. rst-class:: classref-constant
+
+**OLD_LACE** = ``Color(0.992157, 0.960784, 0.901961, 1)``
+
+Old lace color.
+
+.. _class_Color_constant_OLIVE:
+
+.. rst-class:: classref-constant
+
+**OLIVE** = ``Color(0.501961, 0.501961, 0, 1)``
+
+Olive color.
+
+.. _class_Color_constant_OLIVE_DRAB:
+
+.. rst-class:: classref-constant
+
+**OLIVE_DRAB** = ``Color(0.419608, 0.556863, 0.137255, 1)``
+
+Olive drab color.
+
+.. _class_Color_constant_ORANGE:
+
+.. rst-class:: classref-constant
+
+**ORANGE** = ``Color(1, 0.647059, 0, 1)``
+
+Orange color.
+
+.. _class_Color_constant_ORANGE_RED:
+
+.. rst-class:: classref-constant
+
+**ORANGE_RED** = ``Color(1, 0.270588, 0, 1)``
+
+Orange red color.
+
+.. _class_Color_constant_ORCHID:
+
+.. rst-class:: classref-constant
+
+**ORCHID** = ``Color(0.854902, 0.439216, 0.839216, 1)``
+
+Orchid color.
+
+.. _class_Color_constant_PALE_GOLDENROD:
+
+.. rst-class:: classref-constant
+
+**PALE_GOLDENROD** = ``Color(0.933333, 0.909804, 0.666667, 1)``
+
+Pale goldenrod color.
+
+.. _class_Color_constant_PALE_GREEN:
+
+.. rst-class:: classref-constant
+
+**PALE_GREEN** = ``Color(0.596078, 0.984314, 0.596078, 1)``
+
+Pale green color.
+
+.. _class_Color_constant_PALE_TURQUOISE:
+
+.. rst-class:: classref-constant
+
+**PALE_TURQUOISE** = ``Color(0.686275, 0.933333, 0.933333, 1)``
+
+Pale turquoise color.
+
+.. _class_Color_constant_PALE_VIOLET_RED:
+
+.. rst-class:: classref-constant
+
+**PALE_VIOLET_RED** = ``Color(0.858824, 0.439216, 0.576471, 1)``
+
+Pale violet red color.
+
+.. _class_Color_constant_PAPAYA_WHIP:
+
+.. rst-class:: classref-constant
+
+**PAPAYA_WHIP** = ``Color(1, 0.937255, 0.835294, 1)``
+
+Papaya whip color.
+
+.. _class_Color_constant_PEACH_PUFF:
+
+.. rst-class:: classref-constant
+
+**PEACH_PUFF** = ``Color(1, 0.854902, 0.72549, 1)``
+
+Peach puff color.
+
+.. _class_Color_constant_PERU:
+
+.. rst-class:: classref-constant
+
+**PERU** = ``Color(0.803922, 0.521569, 0.247059, 1)``
+
+Peru color.
+
+.. _class_Color_constant_PINK:
+
+.. rst-class:: classref-constant
+
+**PINK** = ``Color(1, 0.752941, 0.796078, 1)``
+
+Pink color.
+
+.. _class_Color_constant_PLUM:
+
+.. rst-class:: classref-constant
+
+**PLUM** = ``Color(0.866667, 0.627451, 0.866667, 1)``
+
+Plum color.
+
+.. _class_Color_constant_POWDER_BLUE:
+
+.. rst-class:: classref-constant
+
+**POWDER_BLUE** = ``Color(0.690196, 0.878431, 0.901961, 1)``
+
+Powder blue color.
+
+.. _class_Color_constant_PURPLE:
+
+.. rst-class:: classref-constant
+
+**PURPLE** = ``Color(0.627451, 0.12549, 0.941176, 1)``
+
+Purple color.
+
+.. _class_Color_constant_REBECCA_PURPLE:
+
+.. rst-class:: classref-constant
+
+**REBECCA_PURPLE** = ``Color(0.4, 0.2, 0.6, 1)``
+
+Rebecca purple color.
+
+.. _class_Color_constant_RED:
+
+.. rst-class:: classref-constant
+
+**RED** = ``Color(1, 0, 0, 1)``
+
+Red color.
+
+.. _class_Color_constant_ROSY_BROWN:
+
+.. rst-class:: classref-constant
+
+**ROSY_BROWN** = ``Color(0.737255, 0.560784, 0.560784, 1)``
+
+Rosy brown color.
+
+.. _class_Color_constant_ROYAL_BLUE:
+
+.. rst-class:: classref-constant
+
+**ROYAL_BLUE** = ``Color(0.254902, 0.411765, 0.882353, 1)``
+
+Royal blue color.
+
+.. _class_Color_constant_SADDLE_BROWN:
+
+.. rst-class:: classref-constant
+
+**SADDLE_BROWN** = ``Color(0.545098, 0.270588, 0.0745098, 1)``
+
+Saddle brown color.
+
+.. _class_Color_constant_SALMON:
+
+.. rst-class:: classref-constant
+
+**SALMON** = ``Color(0.980392, 0.501961, 0.447059, 1)``
+
+Salmon color.
+
+.. _class_Color_constant_SANDY_BROWN:
+
+.. rst-class:: classref-constant
+
+**SANDY_BROWN** = ``Color(0.956863, 0.643137, 0.376471, 1)``
+
+Sandy brown color.
+
+.. _class_Color_constant_SEA_GREEN:
+
+.. rst-class:: classref-constant
+
+**SEA_GREEN** = ``Color(0.180392, 0.545098, 0.341176, 1)``
+
+Sea green color.
+
+.. _class_Color_constant_SEASHELL:
+
+.. rst-class:: classref-constant
+
+**SEASHELL** = ``Color(1, 0.960784, 0.933333, 1)``
+
+Seashell color.
+
+.. _class_Color_constant_SIENNA:
+
+.. rst-class:: classref-constant
+
+**SIENNA** = ``Color(0.627451, 0.321569, 0.176471, 1)``
+
+Sienna color.
+
+.. _class_Color_constant_SILVER:
+
+.. rst-class:: classref-constant
+
+**SILVER** = ``Color(0.752941, 0.752941, 0.752941, 1)``
+
+Silver color.
+
+.. _class_Color_constant_SKY_BLUE:
+
+.. rst-class:: classref-constant
+
+**SKY_BLUE** = ``Color(0.529412, 0.807843, 0.921569, 1)``
+
+Sky blue color.
+
+.. _class_Color_constant_SLATE_BLUE:
+
+.. rst-class:: classref-constant
+
+**SLATE_BLUE** = ``Color(0.415686, 0.352941, 0.803922, 1)``
+
+Slate blue color.
+
+.. _class_Color_constant_SLATE_GRAY:
+
+.. rst-class:: classref-constant
+
+**SLATE_GRAY** = ``Color(0.439216, 0.501961, 0.564706, 1)``
+
+Slate gray color.
+
+.. _class_Color_constant_SNOW:
+
+.. rst-class:: classref-constant
+
+**SNOW** = ``Color(1, 0.980392, 0.980392, 1)``
+
+Snow color.
+
+.. _class_Color_constant_SPRING_GREEN:
+
+.. rst-class:: classref-constant
+
+**SPRING_GREEN** = ``Color(0, 1, 0.498039, 1)``
+
+Spring green color.
+
+.. _class_Color_constant_STEEL_BLUE:
+
+.. rst-class:: classref-constant
+
+**STEEL_BLUE** = ``Color(0.27451, 0.509804, 0.705882, 1)``
+
+Steel blue color.
+
+.. _class_Color_constant_TAN:
+
+.. rst-class:: classref-constant
+
+**TAN** = ``Color(0.823529, 0.705882, 0.54902, 1)``
+
+Tan color.
+
+.. _class_Color_constant_TEAL:
+
+.. rst-class:: classref-constant
+
+**TEAL** = ``Color(0, 0.501961, 0.501961, 1)``
+
+Teal color.
+
+.. _class_Color_constant_THISTLE:
+
+.. rst-class:: classref-constant
+
+**THISTLE** = ``Color(0.847059, 0.74902, 0.847059, 1)``
+
+Thistle color.
+
+.. _class_Color_constant_TOMATO:
+
+.. rst-class:: classref-constant
+
+**TOMATO** = ``Color(1, 0.388235, 0.278431, 1)``
+
+Tomato color.
+
+.. _class_Color_constant_TRANSPARENT:
+
+.. rst-class:: classref-constant
+
+**TRANSPARENT** = ``Color(1, 1, 1, 0)``
+
+Transparent color (white with zero alpha).
+
+.. _class_Color_constant_TURQUOISE:
+
+.. rst-class:: classref-constant
+
+**TURQUOISE** = ``Color(0.25098, 0.878431, 0.815686, 1)``
+
+Turquoise color.
+
+.. _class_Color_constant_VIOLET:
+
+.. rst-class:: classref-constant
+
+**VIOLET** = ``Color(0.933333, 0.509804, 0.933333, 1)``
+
+Violet color.
+
+.. _class_Color_constant_WEB_GRAY:
+
+.. rst-class:: classref-constant
+
+**WEB_GRAY** = ``Color(0.501961, 0.501961, 0.501961, 1)``
+
+Web gray color.
+
+.. _class_Color_constant_WEB_GREEN:
+
+.. rst-class:: classref-constant
+
+**WEB_GREEN** = ``Color(0, 0.501961, 0, 1)``
+
+Web green color.
+
+.. _class_Color_constant_WEB_MAROON:
+
+.. rst-class:: classref-constant
+
+**WEB_MAROON** = ``Color(0.501961, 0, 0, 1)``
+
+Web maroon color.
+
+.. _class_Color_constant_WEB_PURPLE:
+
+.. rst-class:: classref-constant
+
+**WEB_PURPLE** = ``Color(0.501961, 0, 0.501961, 1)``
+
+Web purple color.
+
+.. _class_Color_constant_WHEAT:
+
+.. rst-class:: classref-constant
+
+**WHEAT** = ``Color(0.960784, 0.870588, 0.701961, 1)``
+
+Wheat color.
+
+.. _class_Color_constant_WHITE:
+
+.. rst-class:: classref-constant
+
+**WHITE** = ``Color(1, 1, 1, 1)``
+
+White color.
+
+.. _class_Color_constant_WHITE_SMOKE:
+
+.. rst-class:: classref-constant
+
+**WHITE_SMOKE** = ``Color(0.960784, 0.960784, 0.960784, 1)``
+
+White smoke color.
+
+.. _class_Color_constant_YELLOW:
+
+.. rst-class:: classref-constant
+
+**YELLOW** = ``Color(1, 1, 0, 1)``
+
+Yellow color.
+
+.. _class_Color_constant_YELLOW_GREEN:
+
+.. rst-class:: classref-constant
+
+**YELLOW_GREEN** = ``Color(0.603922, 0.803922, 0.196078, 1)``
+
+Yellow green color.
