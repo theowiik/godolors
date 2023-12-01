@@ -9,6 +9,8 @@ https://docs.godotengine.org/en/stable/classes/class_color.html
 
 Run the Godot project
 
+Old version built with Godot 3 is available in the `godot-3` branch.
+
 ## Update colors
 
 *Last updated 2023-11-30 for Godot 4.2*
