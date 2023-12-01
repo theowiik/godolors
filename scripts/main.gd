@@ -4,7 +4,7 @@ extends Node2D
 
 const SAVE_TO: String = "user://colors.png"
 const CARD_WIDTH: int = 430
-const CARD_HEIGHT: int = 70
+const CARD_HEIGHT: int = 90
 const COLUMNS: int = 7
 
 # ====================
@@ -18,6 +18,8 @@ var screenshot_taken: bool = false
 
 func _ready() -> void:
 	var colorParser: ColorParser = ColorParser.new()
+	var nColors = colorParser.parse_colors().size()
+	print("Found " + str(nColors) + " colors")
 	add_cards(colorParser.parse_colors())
 	card_container.columns = COLUMNS
 
@@ -30,6 +32,7 @@ func _process(_delta) -> void:
 	await get_tree().physics_frame
 	screenshot()
 	screenshot_taken = true
+	get_tree().quit()
 
 
 func screenshot() -> void:
