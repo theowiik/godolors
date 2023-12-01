@@ -14,7 +14,6 @@ func set_text(msg: String) -> void:
 
 
 func set_card_size(width: int, height: int) -> void:
-	var cardMinSize: Vector2 = Vector2(width, height)
-	custom_minimum_size = cardMinSize
-	rect.custom_minimum_size = cardMinSize
-	# label.custom_minimum_size = cardMinSize
+	var card_min_size: Vector2 = Vector2(width, height)
+	custom_minimum_size = card_min_size
+	rect.custom_minimum_size = card_min_size

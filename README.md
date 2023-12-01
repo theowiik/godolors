@@ -1,6 +1,8 @@
 # godolors :art:
 Generates a preview of Godot color constants
 
+https://docs.godotengine.org/en/stable/classes/class_color.html
+
 ![preview](_meta/readme/colors.png)
 
 ## Usage

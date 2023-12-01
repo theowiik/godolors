@@ -10,18 +10,23 @@ const COLUMNS: int = 7
 # ====================
 
 const ColorParser = preload("res://scripts/color_parser.gd")
-const ColorPair = preload("res://scripts/color_parser.gd")
 @onready var card_container: GridContainer = $CardContainer
 @onready var color_card: PackedScene = preload("res://scenes/color_card.tscn")
 var screenshot_taken: bool = false
 
 
 func _ready() -> void:
-	var colorParser: ColorParser = ColorParser.new()
-	var nColors = colorParser.parse_colors().size()
-	print("Found " + str(nColors) + " colors")
-	add_cards(colorParser.parse_colors())
 	card_container.columns = COLUMNS
+	var color_parser: ColorParser = ColorParser.new()
+	var colors: Array[ColorParser.ColorPair] = color_parser.parse_colors()
+
+	# Add placeholder cards to fill the last row
+	var rows: int = ceil(float(colors.size()) / COLUMNS)
+	var n_missing: int = (rows * COLUMNS) - colors.size()
+	for i in range(n_missing):
+		colors.append(ColorParser.ColorPair.new("", Color(1, 1, 1)))
+
+	add_cards(colors)
 
 
 func _process(_delta) -> void:
