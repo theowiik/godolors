@@ -10,6 +10,8 @@ class ColorPair:
 		color = _color
 
 
+## Parse the colors from the input file and return them as an array of ColorPair objects
+## Returns the array sorted by color
 func parse_colors() -> Array[ColorPair]:
 	var output: Array[ColorPair] = []
 	var file: FileAccess = FileAccess.open(READ_FROM, FileAccess.READ)
@@ -40,9 +42,11 @@ func parse_colors() -> Array[ColorPair]:
 
 	file.close()
 
-	return sorted(output)
+	output.sort_custom(color_comparer)
+	return output
 
 
+## Returns the substring between the first occurrence of opener and the last occurrence of closer
 func substr_between(text: String, opener: String, closer: String) -> String:
 	var start = text.find(opener)
 	if start == -1:
@@ -58,26 +62,40 @@ func substr_between(text: String, opener: String, closer: String) -> String:
 	return text.substr(start, end - start)
 
 
-func sorted(colors: Array[ColorPair]) -> Array[ColorPair]:
-	# Convert RGB colors to HSV and sort by hue
-	var hsv_colors = []
-	for color_pair in colors:
-		var hsv = rgb_to_hsv(color_pair.color)
-		hsv_colors.append({"hsv": hsv, "pair": color_pair})
+## Compares two colors and returns true if the first color is "smaller" than the second
+func color_comparer(a: ColorPair, b: ColorPair) -> bool:
+	if a.color == Color.TRANSPARENT:
+		return false
 
-	hsv_colors.sort_custom(compare_hue)
+	if b.color == Color.TRANSPARENT:
+		return true
 
-	var sorted_colors: Array[ColorPair] = []
-	for item in hsv_colors:
-		sorted_colors.append(item.pair)
-
-	return sorted_colors
+	return color_to_value(a.color) < color_to_value(b.color)
 
 
-func compare_hue(a, b):
-	return a.hsv.r < b.hsv.r
+## Converts a color to a "value" that can be used for sorting
+## More info at https://www.alanzucconi.com/2015/09/30/colour-sorting/
+func color_to_value(color: Color) -> Vector3:
+	var repetitions: int = 8
+	var lum: float = sqrt(0.241 * color.r + 0.691 * color.g + 0.068 * color.b)
+
+	var hsv: Color = rgb_to_hsv(color)
+	var h: float = hsv.r
+	var v: float = hsv.b
+
+	var h2: int = int(h * repetitions)
+	var lum2: int = int(lum * repetitions)
+	var v2: int = int(v * repetitions)
+
+	# if h2 % 2 == 1:
+	# 	v2 = repetitions - v2
+	# 	lum = repetitions - lum
+
+	return Vector3(h2, lum2, v2)
 
 
+## Converts a color from RGB to HSV
+## R = Hue, G = Saturation, B = Value
 func rgb_to_hsv(color: Color) -> Color:
 	var c_max = max(color.r, max(color.g, color.b))
 	var c_min = min(color.r, min(color.g, color.b))
