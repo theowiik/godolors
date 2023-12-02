@@ -6,6 +6,7 @@ const SAVE_TO: String = "user://colors.png"
 const CARD_WIDTH: int = 430
 const CARD_HEIGHT: int = 90
 const COLUMNS: int = 7
+const ADD_PLACEHOLDER_CARDS: bool = false
 
 # ====================
 
@@ -20,11 +21,12 @@ func _ready() -> void:
 	var color_parser: ColorParser = ColorParser.new()
 	var colors: Array[ColorParser.ColorPair] = color_parser.parse_colors()
 
-	# Add placeholder cards to fill the last row
-	var rows: int = ceil(float(colors.size()) / COLUMNS)
-	var n_missing: int = (rows * COLUMNS) - colors.size()
-	for i in range(n_missing):
-		colors.append(ColorParser.ColorPair.new("", Color(1, 1, 1)))
+	if ADD_PLACEHOLDER_CARDS:
+		# Add placeholder cards to fill the last row
+		var rows: int = ceil(float(colors.size()) / COLUMNS)
+		var n_missing: int = (rows * COLUMNS) - colors.size()
+		for i in range(n_missing):
+			colors.append(ColorParser.ColorPair.new("", Color(1, 1, 1)))
 
 	add_cards(colors)
 
