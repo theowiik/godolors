@@ -38,13 +38,18 @@ func parse_colors() -> Array[ColorPair]:
 			color_values[3].to_float()
 		)
 
-		output.append(ColorPair.new(color_name, color))
+		output.append(ColorPair.new(format_name(color_name), color))
 
 	file.close()
 
 	output.sort_custom(color_comparer)
 	return output
 
+# 1. To lower case
+# 2. Replace underscores with spaces
+func format_name(name: String) -> String:
+	return name
+	return name.to_lower().replace("_", "")
 
 ## Returns the substring between the first occurrence of opener and the last occurrence of closer
 func substr_between(text: String, opener: String, closer: String) -> String:
