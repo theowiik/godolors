@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drkclr03vf1we"
-path="res://.godot/imported/checker.png-6bb199bedbd039461e4248c1d0b9691d.ctex"
+path="res://.godot/imported/checker.png-7dcf8ccb90954474f03b6153c771f4ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://checker.png"
-dest_files=["res://.godot/imported/checker.png-6bb199bedbd039461e4248c1d0b9691d.ctex"]
+source_file="res://assets/checker.png"
+dest_files=["res://.godot/imported/checker.png-7dcf8ccb90954474f03b6153c771f4ea.ctex"]
 
 [params]
 
