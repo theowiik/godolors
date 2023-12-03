@@ -45,11 +45,12 @@ func parse_colors() -> Array[ColorPair]:
 	output.sort_custom(color_comparer)
 	return output
 
-# 1. To lower case
-# 2. Replace underscores with spaces
+
+## 1. To lower case
+## 2. Replace underscores with spaces
 func format_name(name: String) -> String:
-	return name
 	return name.to_lower().replace("_", "")
+
 
 ## Returns the substring between the first occurrence of opener and the last occurrence of closer
 func substr_between(text: String, opener: String, closer: String) -> String:
@@ -92,9 +93,9 @@ func color_to_value(color: Color) -> Vector3:
 	var lum2: int = int(lum * repetitions)
 	var v2: int = int(v * repetitions)
 
-	# if h2 % 2 == 1:
-	# 	v2 = repetitions - v2
-	# 	lum = repetitions - lum
+	if h2 % 2 == 1:
+		v2 = repetitions - v2
+		lum = repetitions - lum
 
 	return Vector3(h2, lum2, v2)
 
