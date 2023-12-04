@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctwya4mgk8p2b"]
+[gd_scene load_steps=2 format=3 uid="uid://ctwya4mgk8p2b"]
 
 [ext_resource type="Script" path="res://scripts/color_card.gd" id="1_56vnd"]
-[ext_resource type="FontFile" uid="uid://dddr1x3pccff" path="res://assets/Roboto-Black.ttf" id="2_8i0do"]
 
 [node name="ColorCard" type="CenterContainer"]
 offset_right = 42.0
@@ -20,7 +19,6 @@ clip_contents = false
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 9
-theme_override_fonts/bold_font = ExtResource("2_8i0do")
 theme_override_font_sizes/bold_font_size = 37
 bbcode_enabled = true
 text = "[center][b]lorem ipsum[/b][/center]"
