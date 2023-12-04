@@ -3,8 +3,8 @@ extends Node2D
 # ====== CONFIG ======
 
 const SAVE_TO: String = "user://colors.png"
-const CARD_WIDTH: int = 430
-const CARD_HEIGHT: int = 70
+const CARD_WIDTH: int = 420
+const CARD_HEIGHT: int = 80
 const COLUMNS: int = 7
 const ADD_PLACEHOLDER_CARDS: bool = false
 
