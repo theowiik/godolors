@@ -46,10 +46,9 @@ func parse_colors() -> Array[ColorPair]:
 	return output
 
 
-## 1. To lower case
-## 2. Replace underscores with spaces
+## Perform any necessary formatting on the color name
 func format_name(name: String) -> String:
-	return name.to_lower().replace("_", "")
+	return name
 
 
 ## Returns the substring between the first occurrence of opener and the last occurrence of closer
